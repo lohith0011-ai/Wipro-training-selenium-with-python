@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.4 on win32)" generated="2026-02-20T18:12:30.195322" rpa="false" schemaversion="5">
+<suite id="s1" name="CSVLS" source="C:\Users\lohit\PycharmProjects\RobotFramework\DataDriven\CSVLS.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T18:12:30.482576" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T18:12:30.481550" elapsed="7.161060"/>
+</kw>
+<test id="s1-t1" name="Login with valid users" line="13">
+<status status="FAIL" start="2026-02-20T18:12:37.644116" elapsed="0.001008">Test cannot be empty.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T18:12:37.646251" elapsed="2.157232"/>
+</kw>
+<status status="FAIL" start="2026-02-20T18:12:30.196327" elapsed="9.607156"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="CSVLS" id="s1" pass="0" fail="1" skip="0">CSVLS</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-20T18:12:30.479543" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\lohit\PycharmProjects\RobotFramework\DataDriven\CSVLS.robot", line 0</msg>
+<msg time="2026-02-20T18:12:30.479543" level="ERROR">In source file:
+  File "C:/Users/lohit/PycharmProjects/RobotFramework/TestData/ddtLogindataCSV.csv", line 0</msg>
+<msg time="2026-02-20T18:12:30.480555" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>
